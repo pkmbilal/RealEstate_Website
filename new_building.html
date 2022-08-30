@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewBuilding</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/boxicons.min.css">
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <!-- Common Portion -->
+        <div class="main-menu">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-lg">
+                    <a class="navbar-brand" href="#"><i class='bx bx-buildings'></i></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/index.html">Dashboard</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="/buildings.html">Buildings</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="/rooms.html">Rooms</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="/customers.html">Customers</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="/receipts.html">Receipts</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="submenu">
+            <div class="container-fluid d-flex align-items-center justify-content-between">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="/dashboard.html">Dashboard</a></li>
+                      <li class="breadcrumb-item active bc" aria-current="page">NewBuilding</li>
+                    </ol>
+                </nav>
+                <div class="button d-flex align-items-center gap-3">
+                    <div class="dropdown">
+                        <button class="btn logged_in dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class='bx bxs-user' ></i> Mohammed
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#"><i class='bx bx-user-circle icon'></i> Profile</a></li>
+                          <li><a class="dropdown-item" href="#"><i class='bx bx-reset icon'></i> Reset Password</a></li>
+                          <li><a class="dropdown-item" href="#"><i class='bx bxs-arrow-to-left icon'></i></i> Logout</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn new dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Create New
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="/new_building.html"><i class='bx bx-buildings icon'></i> Building</a></li>
+                          <li><a class="dropdown-item" href="/new_room.html"><i class='bx bxs-home icon' ></i> Room</a></li>
+                          <li><a class="dropdown-item" href="/new_customer.html"><i class='bx bxs-user icon'></i> Customer</a></li>
+                          <li><a class="dropdown-item" href="/new_receipt.html"><i class='bx bx-receipt icon' ></i> Receipt</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- New Building -->
+        <div class="container-fluid">
+            <div class="main-box">
+                <div class="row d-flex align-items-center justify-content-center">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 d-flex align-items-start flex-column">
+                        <h1 class="mb-4 mt-2">Building</h1>
+                        <form autocomplete="off">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                                    <div class="mb-3">
+                                        <label for="building_name" class="form-label">building name</label>
+                                        <input type="text" class="form-control form-control-lg" id="building_name" >
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                                    <div class="mb-3">
+                                        <label for="name_of_owner" class="form-label">name of owner</label>
+                                        <input type="text" class="form-control form-control-lg" id="name_of_owner" >
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                                    <label for="building_type" class="form-label">building type</label>
+                                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" id="building_type">
+                                        <option selected>select</option>
+                                        <option value="1">lease</option>
+                                        <option value="2">own</option>
+                                      </select>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                                    <div class="mb-3">
+                                        <label for="mobile_number" class="form-label">mobile number</label>
+                                        <input type="number" class="form-control form-control-lg" id="mobile_number" >
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                                    <div class="mb-3">
+                                        <label for="number_of_rooms" class="form-label">number of rooms</label>
+                                        <input type="number" class="form-control form-control-lg" id="number_of_rooms">
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                                    <div class="mb-5">
+                                        <label for="current_lease_period" class="form-label">current lease period</label>
+                                        <input type="date" class="form-control form-control-lg" id="current_lease_period">
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                                    <button type="submit" class="btn btn-lg mb-4">Submit</button>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                                    <button type="reset" class="btn btn-lg">Reset</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    <!-- JavaScript -->
+    <script src="static/js/bootstrap.bundle.min.js"></script>  
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/app.js"></script>
+</body>
+</html>
